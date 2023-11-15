@@ -27,7 +27,7 @@ type Manifest struct {
 
 	RootEntry *DirEntry `json:"rootEntry"`
 
-	RetentionReasons []string `json:"-"`
+	RetentionReasons []string `json:"retentionReason,omitempty"`
 
 	Tags map[string]string `json:"tags,omitempty"`
 
